@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gizi Cerdas membantu pemantauan pertumbuhan dan status gizi balita.">
+  <title>Gizi Cerdas | Pantau Tumbuh Kembang Balita</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#beranda">
+      <span class="brand-icon">✚</span>
+      <span>Gizi<span class="brand-light">Cerdas</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Buka menu" aria-expanded="false">☰</button>
+
+    <nav id="navMenu">
+      <a href="#beranda">Beranda</a>
+      <a href="#fitur">Fitur</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak" class="nav-cta">Hubungi Kami</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-content">
+        <span class="eyebrow">PANTAU PERTUMBUHAN DENGAN LEBIH MUDAH</span>
+        <h1>Langkah Kecil Hari Ini, <span>Masa Depan Sehat</span> Esok Hari.</h1>
+        <p>
+          Gizi Cerdas merupakan konsep sistem informasi untuk membantu
+          pemantauan pertumbuhan dan status gizi balita usia 0–60 bulan.
+        </p>
+        <div class="hero-actions">
+          <a href="#fitur" class="button button-primary">Jelajahi Fitur →</a>
+          <a href="#tentang" class="button button-outline">Tentang Kami</a>
+        </div>
+        <div class="hero-note">
+          <span>✓</span> Mendukung pemantauan pertumbuhan balita
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img
+          src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1000&q=85"
+          alt="Orang tua mendampingi anak dalam masa pertumbuhan"
+          class="hero-image">
+        <div class="floating-card">
+          <span class="floating-icon">♡</span>
+          <div>
+            <strong>Tumbuh Kembang Balita</strong>
+            <p>Perhatian hari ini untuk masa depan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section" id="tentang">
+      <span class="eyebrow">TENTANG GIZI CERDAS</span>
+      <h2>Mengenal Pertumbuhan Anak Lebih Dekat</h2>
+      <p class="section-description">
+        Pencatatan pertumbuhan yang teratur membantu orang tua dan
+        petugas kesehatan memantau perkembangan anak serta mengenali
+        kapan diperlukan konsultasi lebih lanjut.
+      </p>
+    </section>
+
+    <section class="features section" id="fitur">
+      <div class="section-heading">
+        <span class="eyebrow">FITUR UTAMA</span>
+        <h2>Informasi dalam Satu Sistem</h2>
+        <p>Dirancang untuk mendukung pemantauan pertumbuhan balita.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">👶</div>
+          <h3>Data Balita</h3>
+          <p>Pencatatan informasi dasar balita agar data lebih terorganisasi.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3>Riwayat Pertumbuhan</h3>
+          <p>Membantu melihat catatan pengukuran berat dan tinggi badan dari waktu ke waktu.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">📋</div>
+          <h3>Informasi Status Gizi</h3>
+          <p>Mendukung penilaian berdasarkan indikator dan Standar Antropometri Anak yang sesuai.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div>
+        <span class="eyebrow eyebrow-light">BERSAMA PEDULI GIZI ANAK</span>
+        <h2>Mulai Kenali Pentingnya Pemantauan Pertumbuhan</h2>
+        <p>Jelajahi informasi Gizi Cerdas dan hubungi kami untuk pertanyaan lebih lanjut.</p>
+      </div>
+      <a href="#kontak" class="button button-white">Hubungi Kami →</a>
+    </section>
+
+    <section class="contact section" id="kontak">
+      <div class="contact-info">
+        <span class="eyebrow">KONTAK</span>
+        <h2>Ada Pertanyaan?</h2>
+        <p>
+          Isi formulir berikut untuk menyampaikan pertanyaan atau
+          meminta informasi mengenai konsep Gizi Cerdas.
+        </p>
+        <p class="contact-note">
+          Formulir ini digunakan untuk keperluan informasi proyek.
+        </p>
+      </div>
+
+      <form class="contact-form" name="kontak" method="POST"
+        data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="kontak">
+
+        <p class="hidden-field">
+          <label>Jangan isi bagian ini:
+            <input name="bot-field">
+          </label>
+        </p>
+
+        <label for="nama">Nama lengkap</label>
+        <input id="nama" type="text" name="nama"
+          placeholder="Masukkan nama kamu" required>
+
+        <label for="email">Alamat email</label>
+        <input id="email" type="email" name="email"
+          placeholder="nama@email.com" required>
+
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="4"
+          placeholder="Tuliskan pertanyaan kamu..." required></textarea>
+
+        <button class="button button-primary submit-button" type="submit">
+          Kirim Pesan →
+        </button>
+        <p class="form-note">Mohon isi data dengan benar sebelum mengirim.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#beranda">
+      <span class="brand-icon">✚</span>
+      <span>Gizi<span class="brand-light">Cerdas</span></span>
+    </a>
+    <p>© <span id="year"></span> Gizi Cerdas. Landing page proyek sistem informasi gizi balita.</p>
+  </footer>
+</body>
+</html>
