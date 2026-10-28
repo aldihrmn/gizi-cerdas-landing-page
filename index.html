@@ -10,29 +10,36 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#16866a">
 
-    <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="zmO1SOZH5aPvnoWjdkhEJwn6rz78wVkgIsfXf7CQYYc">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Gizi Cerdas | Pantau Tumbuh Kembang Balita">
     <meta property="og:description" content="Bantu pantau pertumbuhan dan status gizi balita dengan Gizi Cerdas.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://marvelous-brigadeiros-a35641.netlify.app/">
 
-   <link rel="stylesheet" href="./style.css?v=2">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./style.css?v=5">
 </head>
 
 <body>
-    <!-- Navigasi -->
+    <!-- NAVBAR -->
     <header class="navbar">
         <div class="container nav-container">
+
             <a href="#beranda" class="logo" aria-label="Gizi Cerdas Beranda">
                 <span class="logo-icon">🌱</span>
                 <span>Gizi Cerdas</span>
             </a>
 
-            <nav aria-label="Navigasi utama">
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Buka menu navigasi"
+                aria-expanded="false"
+                aria-controls="navMenu"
+            >☰</button>
+
+            <nav id="navMenu" aria-label="Navigasi utama">
                 <ul class="nav-links">
                     <li><a href="#beranda">Beranda</a></li>
                     <li><a href="#tentang">Tentang</a></li>
@@ -45,15 +52,19 @@
             <a href="#fitur" class="btn btn-primary nav-button">
                 Jelajahi Fitur
             </a>
+
         </div>
     </header>
 
     <main>
-        <!-- Beranda / Hero -->
+        <!-- BERANDA -->
         <section id="beranda" class="hero">
             <div class="container hero-container">
+
                 <div class="hero-content">
-                    <span class="eyebrow">Tumbuh Sehat, Masa Depan Cerah</span>
+                    <span class="eyebrow">
+                        Tumbuh Sehat, Masa Depan Cerah
+                    </span>
 
                     <h1>
                         Pantau Tumbuh Kembang Anak dengan
@@ -71,6 +82,7 @@
                         <a href="#fitur" class="btn btn-primary">
                             Kenali Fitur Kami
                         </a>
+
                         <a href="#tentang" class="btn btn-secondary">
                             Pelajari Lebih Lanjut
                         </a>
@@ -84,29 +96,37 @@
 
                 <div class="hero-image">
                     <img
-                        src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+                        src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1000&q=85"
                         alt="Orang tua mendampingi anak dalam masa pertumbuhan"
                         width="600"
                         height="500"
                         fetchpriority="high"
                     >
+
                     <div class="image-caption">
                         <span class="caption-icon">💚</span>
+
                         <div>
                             <strong>Pertumbuhan Anak Lebih Terpantau</strong>
                             <p>Dukung masa depan anak sejak dini.</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
-        <!-- Tentang -->
+        <!-- TENTANG -->
         <section id="tentang" class="section about">
             <div class="container">
+
                 <div class="section-heading">
                     <span class="eyebrow">Tentang Gizi Cerdas</span>
-                    <h2>Mendukung Orang Tua Memahami Tumbuh Kembang Anak</h2>
+
+                    <h2>
+                        Mendukung Orang Tua Memahami Tumbuh Kembang Anak
+                    </h2>
+
                     <p>
                         Pemantauan pertumbuhan merupakan bagian penting
                         dalam mendukung kesehatan balita. Informasi yang
@@ -118,7 +138,9 @@
                 <div class="about-grid">
                     <article class="info-card">
                         <div class="card-icon">📊</div>
+
                         <h3>Pemantauan Pertumbuhan</h3>
+
                         <p>
                             Membantu mencatat dan melihat perkembangan
                             berat badan serta tinggi atau panjang badan anak.
@@ -127,7 +149,9 @@
 
                     <article class="info-card">
                         <div class="card-icon">🧒</div>
+
                         <h3>Fokus pada Balita</h3>
+
                         <p>
                             Dirancang untuk mendukung pemantauan anak
                             berusia 0–60 bulan.
@@ -136,22 +160,28 @@
 
                     <article class="info-card">
                         <div class="card-icon">📚</div>
+
                         <h3>Informasi Gizi</h3>
+
                         <p>
                             Menyediakan informasi edukasi untuk membantu
                             orang tua memahami pentingnya gizi seimbang.
                         </p>
                     </article>
                 </div>
+
             </div>
         </section>
 
-        <!-- Fitur -->
+        <!-- FITUR -->
         <section id="fitur" class="section features">
             <div class="container">
+
                 <div class="section-heading">
                     <span class="eyebrow">Fitur Utama</span>
+
                     <h2>Kenali Fitur Gizi Cerdas</h2>
+
                     <p>
                         Informasi dan pemantauan yang disusun agar lebih
                         mudah dipahami oleh orang tua.
@@ -161,7 +191,9 @@
                 <div class="features-grid">
                     <article class="feature-card">
                         <div class="feature-icon">📈</div>
+
                         <h3>Pemantauan Pertumbuhan</h3>
+
                         <p>
                             Catat hasil pengukuran anak dan amati
                             perkembangannya dari waktu ke waktu.
@@ -170,7 +202,9 @@
 
                     <article class="feature-card">
                         <div class="feature-icon">⚖️</div>
+
                         <h3>Informasi Status Gizi</h3>
+
                         <p>
                             Bantu memahami hasil pengukuran berdasarkan
                             standar antropometri anak yang relevan.
@@ -179,7 +213,9 @@
 
                     <article class="feature-card">
                         <div class="feature-icon">🥗</div>
+
                         <h3>Edukasi Gizi</h3>
+
                         <p>
                             Pelajari informasi dasar mengenai gizi
                             seimbang untuk mendukung kesehatan balita.
@@ -188,22 +224,30 @@
 
                     <article class="feature-card">
                         <div class="feature-icon">💡</div>
+
                         <h3>Informasi dan Saran</h3>
+
                         <p>
                             Dapatkan informasi pendukung untuk membantu
                             orang tua menentukan langkah selanjutnya.
                         </p>
                     </article>
                 </div>
+
             </div>
         </section>
 
-        <!-- Manfaat -->
+        <!-- MANFAAT -->
         <section id="manfaat" class="section benefits">
             <div class="container benefits-container">
+
                 <div class="benefits-content">
                     <span class="eyebrow">Mengapa Gizi Cerdas?</span>
-                    <h2>Langkah Kecil untuk Pertumbuhan yang Lebih Baik</h2>
+
+                    <h2>
+                        Langkah Kecil untuk Pertumbuhan yang Lebih Baik
+                    </h2>
+
                     <p>
                         Pemantauan secara berkala membantu orang tua
                         mengetahui perubahan pertumbuhan anak dan
@@ -213,19 +257,22 @@
                     <ul class="benefits-list">
                         <li>
                             <span>✓</span>
-                            Membantu pencatatan hasil pengukuran anak.
+                            <p>Membantu pencatatan hasil pengukuran anak.</p>
                         </li>
+
                         <li>
                             <span>✓</span>
-                            Memudahkan orang tua memahami informasi pertumbuhan.
+                            <p>Memudahkan orang tua memahami informasi pertumbuhan.</p>
                         </li>
+
                         <li>
                             <span>✓</span>
-                            Mendukung edukasi mengenai kesehatan dan gizi balita.
+                            <p>Mendukung edukasi mengenai kesehatan dan gizi balita.</p>
                         </li>
+
                         <li>
                             <span>✓</span>
-                            Mendorong pemantauan berkala bersama tenaga kesehatan.
+                            <p>Mendorong pemantauan berkala bersama tenaga kesehatan.</p>
                         </li>
                     </ul>
                 </div>
@@ -237,30 +284,43 @@
                         <p>Mulai dengan pemantauan sejak dini.</p>
                     </div>
                 </div>
+
             </div>
         </section>
 
-        <!-- Ajakan -->
+        <!-- AJAKAN -->
         <section class="section cta">
             <div class="container cta-content">
-                <span class="eyebrow">Bersama Mendukung Generasi Sehat</span>
-                <h2>Perhatikan Pertumbuhan Anak Mulai Sekarang</h2>
+
+                <span class="eyebrow">
+                    Bersama Mendukung Generasi Sehat
+                </span>
+
+                <h2>
+                    Perhatikan Pertumbuhan Anak Mulai Sekarang
+                </h2>
+
                 <p>
                     Kenali pentingnya pemantauan pertumbuhan dan
                     pemenuhan gizi untuk mendukung tumbuh kembang balita.
                 </p>
+
                 <a href="#kontak" class="btn btn-light">
                     Hubungi Kami
                 </a>
+
             </div>
         </section>
 
-        <!-- Kontak -->
+        <!-- KONTAK -->
         <section id="kontak" class="section contact">
             <div class="container contact-container">
+
                 <div class="contact-info">
                     <span class="eyebrow">Hubungi Kami</span>
+
                     <h2>Ada Pertanyaan tentang Gizi Cerdas?</h2>
+
                     <p>
                         Gunakan formulir ini untuk mengirim pertanyaan
                         atau masukan mengenai website Gizi Cerdas.
@@ -270,6 +330,7 @@
                         <span>📍</span>
                         <p>Puskesmas Seroja</p>
                     </div>
+
                     <div class="contact-detail">
                         <span>💚</span>
                         <p>Mendukung pemantauan tumbuh kembang balita</p>
@@ -283,7 +344,11 @@
                     data-netlify="true"
                     netlify-honeypot="bot-field"
                 >
-                    <input type="hidden" name="form-name" value="kontak-gizi-cerdas">
+                    <input
+                        type="hidden"
+                        name="form-name"
+                        value="kontak-gizi-cerdas"
+                    >
 
                     <p class="hidden">
                         <label>
@@ -294,6 +359,7 @@
 
                     <div class="form-group">
                         <label for="nama">Nama</label>
+
                         <input
                             type="text"
                             id="nama"
@@ -306,6 +372,7 @@
 
                     <div class="form-group">
                         <label for="email">Email</label>
+
                         <input
                             type="email"
                             id="email"
@@ -318,6 +385,7 @@
 
                     <div class="form-group">
                         <label for="pesan">Pesan</label>
+
                         <textarea
                             id="pesan"
                             name="pesan"
@@ -331,13 +399,15 @@
                         Kirim Pesan
                     </button>
                 </form>
+
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer-container">
+
             <a href="#beranda" class="logo footer-logo">
                 <span class="logo-icon">🌱</span>
                 <span>Gizi Cerdas</span>
@@ -358,14 +428,51 @@
                 &copy; <span id="tahun">2026</span> Gizi Cerdas.
                 Semua hak dilindungi.
             </p>
+
         </div>
     </footer>
 
+    <!-- JAVASCRIPT -->
     <script>
         const tahunElement = document.getElementById("tahun");
 
         if (tahunElement) {
             tahunElement.textContent = new Date().getFullYear();
+        }
+
+        const menuToggle = document.getElementById("menuToggle");
+        const navMenu = document.getElementById("navMenu");
+
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener("click", function () {
+                const isOpen = navMenu.classList.toggle("open");
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    String(isOpen)
+                );
+
+                menuToggle.setAttribute(
+                    "aria-label",
+                    isOpen ? "Tutup menu navigasi" : "Buka menu navigasi"
+                );
+
+                menuToggle.textContent = isOpen ? "✕" : "☰";
+            });
+
+            navMenu.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    navMenu.classList.remove("open");
+
+                    menuToggle.setAttribute("aria-expanded", "false");
+                    menuToggle.setAttribute(
+                        "aria-label",
+                        "Buka menu navigasi"
+                    );
+
+                    menuToggle.textContent = "☰";
+                });
+            });
         }
     </script>
 </body>
