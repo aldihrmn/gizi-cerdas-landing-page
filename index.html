@@ -1,161 +1,372 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gizi Cerdas membantu pemantauan pertumbuhan dan status gizi balita.">
-  <title>Gizi Cerdas | Pantau Tumbuh Kembang Balita</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gizi Cerdas | Pantau Tumbuh Kembang Balita</title>
+
+    <meta name="description" content="Gizi Cerdas membantu orang tua memantau pertumbuhan dan status gizi balita usia 0–60 bulan melalui informasi yang mudah dipahami.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#16866a">
+
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="zmO1SOZH5aPvnoWjdkhEJwn6rz78wVkgIsfXf7CQYYc">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gizi Cerdas | Pantau Tumbuh Kembang Balita">
+    <meta property="og:description" content="Bantu pantau pertumbuhan dan status gizi balita dengan Gizi Cerdas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marvelous-brigadeiros-a35641.netlify.app/">
+
+    <link rel="stylesheet" href="gaya.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-  <header class="navbar">
-    <a class="brand" href="#beranda">
-      <span class="brand-icon">✚</span>
-      <span>Gizi<span class="brand-light">Cerdas</span></span>
-    </a>
+    <!-- Navigasi -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#beranda" class="logo" aria-label="Gizi Cerdas Beranda">
+                <span class="logo-icon">🌱</span>
+                <span>Gizi Cerdas</span>
+            </a>
 
-    <button class="menu-toggle" id="menuToggle"
-      aria-label="Buka menu" aria-expanded="false">☰</button>
+            <nav aria-label="Navigasi utama">
+                <ul class="nav-links">
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#fitur">Fitur</a></li>
+                    <li><a href="#manfaat">Manfaat</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
 
-    <nav id="navMenu">
-      <a href="#beranda">Beranda</a>
-      <a href="#fitur">Fitur</a>
-      <a href="#tentang">Tentang</a>
-      <a href="#kontak" class="nav-cta">Hubungi Kami</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="beranda">
-      <div class="hero-content">
-        <span class="eyebrow">PANTAU PERTUMBUHAN DENGAN LEBIH MUDAH</span>
-        <h1>Langkah Kecil Hari Ini, <span>Masa Depan Sehat</span> Esok Hari.</h1>
-        <p>
-          Gizi Cerdas merupakan konsep sistem informasi untuk membantu
-          pemantauan pertumbuhan dan status gizi balita usia 0–60 bulan.
-        </p>
-        <div class="hero-actions">
-          <a href="#fitur" class="button button-primary">Jelajahi Fitur →</a>
-          <a href="#tentang" class="button button-outline">Tentang Kami</a>
+            <a href="#fitur" class="btn btn-primary nav-button">
+                Jelajahi Fitur
+            </a>
         </div>
-        <div class="hero-note">
-          <span>✓</span> Mendukung pemantauan pertumbuhan balita
+    </header>
+
+    <main>
+        <!-- Beranda / Hero -->
+        <section id="beranda" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="eyebrow">Tumbuh Sehat, Masa Depan Cerah</span>
+
+                    <h1>
+                        Pantau Tumbuh Kembang Anak dengan
+                        <span>Gizi Cerdas</span>
+                    </h1>
+
+                    <p>
+                        Kenali pertumbuhan dan status gizi balita sejak dini.
+                        Gizi Cerdas membantu orang tua mendapatkan informasi
+                        yang lebih mudah dipahami untuk mendukung tumbuh
+                        kembang anak.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#fitur" class="btn btn-primary">
+                            Kenali Fitur Kami
+                        </a>
+                        <a href="#tentang" class="btn btn-secondary">
+                            Pelajari Lebih Lanjut
+                        </a>
+                    </div>
+
+                    <div class="hero-note">
+                        <span>✓</span>
+                        Informasi pertumbuhan balita usia 0–60 bulan
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+                        alt="Orang tua mendampingi anak dalam masa pertumbuhan"
+                        width="600"
+                        height="500"
+                        fetchpriority="high"
+                    >
+                    <div class="image-caption">
+                        <span class="caption-icon">💚</span>
+                        <div>
+                            <strong>Pertumbuhan Anak Lebih Terpantau</strong>
+                            <p>Dukung masa depan anak sejak dini.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tentang -->
+        <section id="tentang" class="section about">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Tentang Gizi Cerdas</span>
+                    <h2>Mendukung Orang Tua Memahami Tumbuh Kembang Anak</h2>
+                    <p>
+                        Pemantauan pertumbuhan merupakan bagian penting
+                        dalam mendukung kesehatan balita. Informasi yang
+                        tepat dapat membantu orang tua lebih memahami
+                        perkembangan anak.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <article class="info-card">
+                        <div class="card-icon">📊</div>
+                        <h3>Pemantauan Pertumbuhan</h3>
+                        <p>
+                            Membantu mencatat dan melihat perkembangan
+                            berat badan serta tinggi atau panjang badan anak.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-icon">🧒</div>
+                        <h3>Fokus pada Balita</h3>
+                        <p>
+                            Dirancang untuk mendukung pemantauan anak
+                            berusia 0–60 bulan.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-icon">📚</div>
+                        <h3>Informasi Gizi</h3>
+                        <p>
+                            Menyediakan informasi edukasi untuk membantu
+                            orang tua memahami pentingnya gizi seimbang.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fitur -->
+        <section id="fitur" class="section features">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Fitur Utama</span>
+                    <h2>Kenali Fitur Gizi Cerdas</h2>
+                    <p>
+                        Informasi dan pemantauan yang disusun agar lebih
+                        mudah dipahami oleh orang tua.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h3>Pemantauan Pertumbuhan</h3>
+                        <p>
+                            Catat hasil pengukuran anak dan amati
+                            perkembangannya dari waktu ke waktu.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">⚖️</div>
+                        <h3>Informasi Status Gizi</h3>
+                        <p>
+                            Bantu memahami hasil pengukuran berdasarkan
+                            standar antropometri anak yang relevan.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">🥗</div>
+                        <h3>Edukasi Gizi</h3>
+                        <p>
+                            Pelajari informasi dasar mengenai gizi
+                            seimbang untuk mendukung kesehatan balita.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">💡</div>
+                        <h3>Informasi dan Saran</h3>
+                        <p>
+                            Dapatkan informasi pendukung untuk membantu
+                            orang tua menentukan langkah selanjutnya.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manfaat -->
+        <section id="manfaat" class="section benefits">
+            <div class="container benefits-container">
+                <div class="benefits-content">
+                    <span class="eyebrow">Mengapa Gizi Cerdas?</span>
+                    <h2>Langkah Kecil untuk Pertumbuhan yang Lebih Baik</h2>
+                    <p>
+                        Pemantauan secara berkala membantu orang tua
+                        mengetahui perubahan pertumbuhan anak dan
+                        mendiskusikan hasilnya dengan tenaga kesehatan.
+                    </p>
+
+                    <ul class="benefits-list">
+                        <li>
+                            <span>✓</span>
+                            Membantu pencatatan hasil pengukuran anak.
+                        </li>
+                        <li>
+                            <span>✓</span>
+                            Memudahkan orang tua memahami informasi pertumbuhan.
+                        </li>
+                        <li>
+                            <span>✓</span>
+                            Mendukung edukasi mengenai kesehatan dan gizi balita.
+                        </li>
+                        <li>
+                            <span>✓</span>
+                            Mendorong pemantauan berkala bersama tenaga kesehatan.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="benefits-visual" aria-label="Ilustrasi pertumbuhan anak">
+                    <div class="visual-circle">
+                        <span class="visual-emoji">🌱</span>
+                        <h3>Tumbuh Sehat</h3>
+                        <p>Mulai dengan pemantauan sejak dini.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ajakan -->
+        <section class="section cta">
+            <div class="container cta-content">
+                <span class="eyebrow">Bersama Mendukung Generasi Sehat</span>
+                <h2>Perhatikan Pertumbuhan Anak Mulai Sekarang</h2>
+                <p>
+                    Kenali pentingnya pemantauan pertumbuhan dan
+                    pemenuhan gizi untuk mendukung tumbuh kembang balita.
+                </p>
+                <a href="#kontak" class="btn btn-light">
+                    Hubungi Kami
+                </a>
+            </div>
+        </section>
+
+        <!-- Kontak -->
+        <section id="kontak" class="section contact">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <span class="eyebrow">Hubungi Kami</span>
+                    <h2>Ada Pertanyaan tentang Gizi Cerdas?</h2>
+                    <p>
+                        Gunakan formulir ini untuk mengirim pertanyaan
+                        atau masukan mengenai website Gizi Cerdas.
+                    </p>
+
+                    <div class="contact-detail">
+                        <span>📍</span>
+                        <p>Puskesmas Seroja</p>
+                    </div>
+                    <div class="contact-detail">
+                        <span>💚</span>
+                        <p>Mendukung pemantauan tumbuh kembang balita</p>
+                    </div>
+                </div>
+
+                <form
+                    class="contact-form"
+                    name="kontak-gizi-cerdas"
+                    method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                >
+                    <input type="hidden" name="form-name" value="kontak-gizi-cerdas">
+
+                    <p class="hidden">
+                        <label>
+                            Jangan isi bagian ini:
+                            <input name="bot-field">
+                        </label>
+                    </p>
+
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input
+                            type="text"
+                            id="nama"
+                            name="nama"
+                            placeholder="Masukkan nama kamu"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="nama@email.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea
+                            id="pesan"
+                            name="pesan"
+                            rows="5"
+                            placeholder="Tuliskan pertanyaan atau masukan..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <a href="#beranda" class="logo footer-logo">
+                <span class="logo-icon">🌱</span>
+                <span>Gizi Cerdas</span>
+            </a>
+
+            <p>
+                Mendukung pemantauan pertumbuhan dan status gizi balita.
+            </p>
+
+            <div class="footer-links">
+                <a href="#beranda">Beranda</a>
+                <a href="#tentang">Tentang</a>
+                <a href="#fitur">Fitur</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+
+            <p class="copyright">
+                &copy; <span id="tahun">2026</span> Gizi Cerdas.
+                Semua hak dilindungi.
+            </p>
         </div>
-      </div>
+    </footer>
 
-      <div class="hero-visual">
-        <img
-          src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1000&q=85"
-          alt="Orang tua mendampingi anak dalam masa pertumbuhan"
-          class="hero-image">
-        <div class="floating-card">
-          <span class="floating-icon">♡</span>
-          <div>
-            <strong>Tumbuh Kembang Balita</strong>
-            <p>Perhatian hari ini untuk masa depan</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <script>
+        const tahunElement = document.getElementById("tahun");
 
-    <section class="intro section" id="tentang">
-      <span class="eyebrow">TENTANG GIZI CERDAS</span>
-      <h2>Mengenal Pertumbuhan Anak Lebih Dekat</h2>
-      <p class="section-description">
-        Pencatatan pertumbuhan yang teratur membantu orang tua dan
-        petugas kesehatan memantau perkembangan anak serta mengenali
-        kapan diperlukan konsultasi lebih lanjut.
-      </p>
-    </section>
-
-    <section class="features section" id="fitur">
-      <div class="section-heading">
-        <span class="eyebrow">FITUR UTAMA</span>
-        <h2>Informasi dalam Satu Sistem</h2>
-        <p>Dirancang untuk mendukung pemantauan pertumbuhan balita.</p>
-      </div>
-
-      <div class="feature-grid">
-        <article class="feature-card">
-          <div class="feature-icon">👶</div>
-          <h3>Data Balita</h3>
-          <p>Pencatatan informasi dasar balita agar data lebih terorganisasi.</p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon">📈</div>
-          <h3>Riwayat Pertumbuhan</h3>
-          <p>Membantu melihat catatan pengukuran berat dan tinggi badan dari waktu ke waktu.</p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon">📋</div>
-          <h3>Informasi Status Gizi</h3>
-          <p>Mendukung penilaian berdasarkan indikator dan Standar Antropometri Anak yang sesuai.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="cta-section">
-      <div>
-        <span class="eyebrow eyebrow-light">BERSAMA PEDULI GIZI ANAK</span>
-        <h2>Mulai Kenali Pentingnya Pemantauan Pertumbuhan</h2>
-        <p>Jelajahi informasi Gizi Cerdas dan hubungi kami untuk pertanyaan lebih lanjut.</p>
-      </div>
-      <a href="#kontak" class="button button-white">Hubungi Kami →</a>
-    </section>
-
-    <section class="contact section" id="kontak">
-      <div class="contact-info">
-        <span class="eyebrow">KONTAK</span>
-        <h2>Ada Pertanyaan?</h2>
-        <p>
-          Isi formulir berikut untuk menyampaikan pertanyaan atau
-          meminta informasi mengenai konsep Gizi Cerdas.
-        </p>
-        <p class="contact-note">
-          Formulir ini digunakan untuk keperluan informasi proyek.
-        </p>
-      </div>
-
-      <form class="contact-form" name="kontak" method="POST"
-        data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="kontak">
-
-        <p class="hidden-field">
-          <label>Jangan isi bagian ini:
-            <input name="bot-field">
-          </label>
-        </p>
-
-        <label for="nama">Nama lengkap</label>
-        <input id="nama" type="text" name="nama"
-          placeholder="Masukkan nama kamu" required>
-
-        <label for="email">Alamat email</label>
-        <input id="email" type="email" name="email"
-          placeholder="nama@email.com" required>
-
-        <label for="pesan">Pesan</label>
-        <textarea id="pesan" name="pesan" rows="4"
-          placeholder="Tuliskan pertanyaan kamu..." required></textarea>
-
-        <button class="button button-primary submit-button" type="submit">
-          Kirim Pesan →
-        </button>
-        <p class="form-note">Mohon isi data dengan benar sebelum mengirim.</p>
-      </form>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <a class="brand footer-brand" href="#beranda">
-      <span class="brand-icon">✚</span>
-      <span>Gizi<span class="brand-light">Cerdas</span></span>
-    </a>
-    <p>© <span id="year"></span> Gizi Cerdas. Landing page proyek sistem informasi gizi balita.</p>
-  </footer>
+        if (tahunElement) {
+            tahunElement.textContent = new Date().getFullYear();
+        }
+    </script>
 </body>
 </html>
