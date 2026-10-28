@@ -586,3 +586,19 @@ img {
     padding: 25px 6%;
   }
 }
+/* TES CSS SEMENTARA */
+body {
+  outline: 5px solid red !important;
+}
+
+.navbar {
+  background: yellow !important;
+  border: 3px solid red !important;
+}
+
+.navbar nav {
+  display: flex !important;
+  flex-direction: row !important;
+  list-style: none !important;
+  gap: 25px !important;
+}
