@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -12,15 +13,29 @@
 
     <meta name="google-site-verification" content="zmO1SOZH5aPvnoWjdkhEJwn6rz78wVkgIsfXf7CQYYc">
 
+    <!-- Open Graph SEO -->
     <meta property="og:title" content="Gizi Cerdas | Pantau Tumbuh Kembang Balita">
     <meta property="og:description" content="Bantu pantau pertumbuhan dan status gizi balita dengan Gizi Cerdas.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://marvelous-brigadeiros-a35641.netlify.app/">
 
+    <!-- Schema Markup Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Gizi Cerdas",
+        "url": "https://marvelous-brigadeiros-a35641.netlify.app/",
+        "description": "Gizi Cerdas merupakan website informasi untuk membantu orang tua memahami pemantauan pertumbuhan dan status gizi balita usia 0–60 bulan."
+    }
+    </script>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./style.css?v=5">
 </head>
 
 <body>
+
     <!-- NAVBAR -->
     <header class="navbar">
         <div class="container nav-container">
@@ -57,6 +72,7 @@
     </header>
 
     <main>
+
         <!-- BERANDA -->
         <section id="beranda" class="hero">
             <div class="container hero-container">
@@ -402,6 +418,7 @@
 
             </div>
         </section>
+
     </main>
 
     <!-- FOOTER -->
@@ -465,6 +482,7 @@
                     navMenu.classList.remove("open");
 
                     menuToggle.setAttribute("aria-expanded", "false");
+
                     menuToggle.setAttribute(
                         "aria-label",
                         "Buka menu navigasi"
@@ -475,5 +493,6 @@
             });
         }
     </script>
+
 </body>
 </html>
